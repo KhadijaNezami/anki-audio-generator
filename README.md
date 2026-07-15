@@ -1,7 +1,33 @@
-# anki-audio-generator
-Python tool for creating pronunciation audio and Anki sound tags from German sentence collections.
 # Anki Audio Generator
 
-Anki Audio Generator is a Python tool that converts sentence lists into pronunciation audio and Anki-compatible flashcard assets. The program reads sentences from a TSV file, generates speech using Google Cloud Text-to-Speech, organizes audio files automatically, and creates an output file containing the corresponding Anki sound tags.
+Anki Audio Generator is a Python tool that converts sentence lists into pronunciation audio and Anki-compatible flashcard assets.
 
-The project was created to automate the process of building listening and pronunciation decks for language learning, eliminating the need to generate and attach audio manually for each card.
+The program:
+
+- Reads German sentences from a TSV file
+- Generates speech using Google Cloud Text-to-Speech
+- Creates MP3 audio files automatically
+- Skips already generated files
+- Produces an Anki-compatible TSV containing sound tags
+
+## Features
+
+- Bulk audio generation
+- Automatic filename sanitization
+- German TTS support
+- Anki integration
+- Reusable for large sentence collections
+
+## Requirements
+
+- Python 3.10+
+- Google Cloud Text-to-Speech API enabled
+- Google Cloud credentials configured
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/anki-audio-generator.git
+cd anki-audio-generator
